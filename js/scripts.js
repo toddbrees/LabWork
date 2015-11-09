@@ -55,3 +55,24 @@ angular.module('geolocation', [])
         google.maps.event.addDomListener(window, 'load', $scope.initialize);
 
     });
+
+function check() {
+    var username= document.getElementById("username").value;
+    var password= document.getElementById("password").value;
+   
+    if(username.length>=1 && password.length >=1){
+    localStorage.setItem("Name",username);
+    document.getElementById("demo").innerHTML = "<center><b>WELCOME"+" <h1>"+username+"</h1></b></center>";
+     
+    location.href="main.html";
+    }
+    else{
+        alert("username or password is empty");
+    }
+}
+
+function register(){
+
+    location.href="register.html";
+    
+}
