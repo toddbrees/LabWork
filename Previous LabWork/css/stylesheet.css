@@ -1,0 +1,13 @@
+#map-canvas {
+    width: 650px;
+    height: 500px;
+    float: left;
+}
+
+#weatherOrigin{
+    float: left
+}
+
+#weatherDestination{
+    float:left
+}
